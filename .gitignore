@@ -1,0 +1,32 @@
+# Java/Maven
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+
