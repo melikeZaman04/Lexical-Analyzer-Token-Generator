@@ -12,10 +12,3 @@ Anahtar kelimeler (keywords) `keywords.csv` dosyasında tanımlanır. Proje bu t
 - Basit ama genişletilebilir: DFA ya da otomata tabanlı genişleme yapılabilir  
 - Uygulama dosya tabanlı ya da konsol-tabanlı kullanılabilir
 
-## 📁 Dosya Yapısı  
-/src
-└─ (kod dosyaları)
-resources/
-└─ keywords.csv ← anahtar kelimeler tanımı
-README.md
-.gitignore
