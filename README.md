@@ -1,21 +1,21 @@
-# DFA-based Lexical Analyzer (Java)
+# Lexical-Analyzer-Token-Generator  
+**Anahtar kelime CSV dosyası kullanarak kaynak kodu lexeme ve token’lara ayıran basit bir sözdizim çözümleyici**
 
-Bu proje, deterministik sonlu otomat (DFA) yaklaşımıyla basit bir lexical analyzer (tokenizer) ve Swing tabanlı bir görsel arayüz sağlar.
+## 🧠 Proje Hakkında  
+Bu proje, belirli bir programlama dili (örneğin Java-benzeri) için kaynak kodunu okuyarak **lexeme** ve bunlara karşılık gelen **token** tiplerini çıkaran bir lexical analyzer (tokenizer) uygulamasıdır.  
+Anahtar kelimeler (keywords) `keywords.csv` dosyasında tanımlanır. Proje bu tanımlara dayanarak “public”, “if”, “while” gibi kelimeleri tanır ve uygun token tiplerine çevirir.
 
-Özellikler
-- Kelimeler / anahtar kelimeler `src/main/resources/keywords.csv` içinde tutulur.
-- Kaynak koddan lexeme ve token tipleri çıkartılır ve her token için satır/sütun bilgisi hesaplanır.
-- Satır yorumları (`//...`) ve blok yorumları (`/*...*/`) temizlenir.
-- Basit bir ön işlemci: `#define NAME value` satırları okunur ve sonraki kodda `NAME` kelimeleri `value` ile değiştirilir.
-- Sonuçlar Swing tablosunda gösterilir.
+## 🚀 Özellikler  
+- `keywords.csv` dosyasındaki lexeme-token eşlemelerini okur  
+- Veri tipleri, anahtar kelimeler, operatörler, semboller gibi temel token kategorilerini tanır  
+- Kaynak kodda satır/sütun bilgisiyle birlikte token oluşturabilir (gerekiyorsa)  
+- Basit ama genişletilebilir: DFA ya da otomata tabanlı genişleme yapılabilir  
+- Uygulama dosya tabanlı ya da konsol-tabanlı kullanılabilir
 
-Nasıl çalıştırılır
-1. Proje kök dizininde terminal açın (Windows PowerShell önerilir).
-2. Bu kod Java 8 (1.8) çalışma zamanı ile uyumludur. Sisteminizde JDK 1.8 veya daha yeni bir JDK bulunmalıdır.
-3. Derleme: `mvn compile` (Maven yüklü ise) veya IDE üzerinden derleyin.
-4. Çalıştırma (IDE veya komut satırı):
-
-   java -cp target\classes com.prodev1.Main
-
-Veya IDE ile `com.prodev1.Main` sınıfını çalıştırın.
-
+## 📁 Dosya Yapısı  
+/src
+└─ (kod dosyaları)
+resources/
+└─ keywords.csv ← anahtar kelimeler tanımı
+README.md
+.gitignore
